@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+</head>
+<body>
+	<div>
+		<img src="logo.png" alt="My Church Logo"> <!-- Replace 'logo.png' with your actual logo path -->
+	</div>
+	<h2>Bible Study Registration</h2>
+	<p><u>My Church/Your Organisation</u></p>
+	<form>
+		<div>
+			<label for="fname">Name</label>
+			<input type="text" name="fname" placeholder="Rubber Duck" required>
+		</div>
+
+		<div>
+			<label for="phone">Phone</label>
+			<input type="phone" name="phone" placeholder="0712345678" required maxlength="10">
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" placeholder="example@domain.com" required>
+		</div>
+
+		<div>
+			<label for="location">Location</label>
+			<select name="location" required>
+				<option value="">Select your location...</option>
+				<option value="Nairobi">Nairobi</option>
+				<option value="Kisumu">Kisumu</option>
+				<option value="Eldoret">Eldoret</option>
+				<option value="Mombasa">Mombasa</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="gender">Your Gender</label>
+			<div>
+				<label><input type="radio" name="gender" value="M" required> Male</label>
+				<label><input type="radio" name="gender" value="F" required> Female</label>
+				<label><input type="radio" name="gender" value="N/A" required> Prefer not to say</label>
+			</div>
+		</div>
+
+		<button name="submit" type="submit">Submit Details</button>
+	</form>
+</body>
+</html>
